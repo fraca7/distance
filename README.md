@@ -48,7 +48,7 @@ Copy include/fraca7 somewhere in your include path (there's a single *distance.h
 
 ## Example usage
 
-```
+```cpp
 
 #include <iostream>
 #include <fraca7/distance.hpp>

@@ -12,8 +12,8 @@ namespace fraca7
 
   template <intmax_t N, intmax_t D> struct static_pgcd : static_pgcd<D, N % D>
   {
-    static_assert(D > 0);
-    static_assert(N >= 0);
+    static_assert(D > 0, "Denominator must be > 0");
+    static_assert(N >= 0, "Numerator must be >= 0");
   };
   template <intmax_t N> struct static_pgcd<N, 0>
   {
